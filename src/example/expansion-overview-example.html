@@ -1,0 +1,49 @@
+<mat-accordion>
+  <!-- #docregion basic-panel -->
+  <!-- #docregion hide-toggle -->
+  <mat-expansion-panel class="expansion-panel" hideToggle>
+    <!-- #enddocregion hide-toggle -->
+    <mat-expansion-panel-header>
+      <mat-panel-title class="expansion-panel__title"> Movie </mat-panel-title>
+      <mat-panel-description> Barbie </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>This is the primary content of the panel.</p>
+    <!-- <mat-action-row>
+      <button mat-button class="expansion-panel__btn">More Info</button>
+    </mat-action-row> -->
+  </mat-expansion-panel>
+  <!-- #enddocregion basic-panel -->
+  <mat-expansion-panel
+    (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false"
+    class="expansion-panel"
+  >
+    <mat-expansion-panel-header>
+      <mat-panel-title class="expansion-panel__title"> Date </mat-panel-title>
+      <mat-panel-description> July 21 </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>This is the primary content of the panel.</p>
+    <!--<mat-action-row>
+      <button mat-button class="expansion-panel__btn">More Info</button>
+    </mat-action-row>-->
+  </mat-expansion-panel>
+
+  <mat-expansion-panel
+    (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false"
+    class="expansion-panel"
+  >
+    <mat-expansion-panel-header>
+      <mat-panel-title class="expansion-panel__title"> Time </mat-panel-title>
+      <mat-panel-description> 8:00 pm </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>This is the primary content of the panel.</p>
+    <mat-action-row>
+      <button mat-button class="expansion-panel__btn">Next</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion>
+
+<!-- Copyright 2023 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at https://angular.io/license -->
